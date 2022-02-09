@@ -2337,19 +2337,19 @@ class _IntervalTimePickerDialogState extends State<IntervalTimePickerDialog>
     final Widget actions = Row(
       children: <Widget>[
         const SizedBox(width: 10.0),
-        IconButton(
-          color: TimePickerTheme.of(context).entryModeIconColor ??
-              theme.colorScheme.onSurface.withOpacity(
-                theme.colorScheme.brightness == Brightness.dark ? 1.0 : 0.6,
-              ),
-          onPressed: _handleEntryModeToggle,
-          icon: Icon(_entryMode.value == TimePickerEntryMode.dial
-              ? Icons.keyboard
-              : Icons.access_time),
-          tooltip: _entryMode.value == TimePickerEntryMode.dial
-              ? MaterialLocalizations.of(context).inputTimeModeButtonLabel
-              : MaterialLocalizations.of(context).dialModeButtonLabel,
-        ),
+//         IconButton(
+//           color: TimePickerTheme.of(context).entryModeIconColor ??
+//               theme.colorScheme.onSurface.withOpacity(
+//                 theme.colorScheme.brightness == Brightness.dark ? 1.0 : 0.6,
+//               ),
+//           onPressed: _handleEntryModeToggle,
+//           icon: Icon(_entryMode.value == TimePickerEntryMode.dial
+//               ? Icons.keyboard
+//               : Icons.access_time),
+//           tooltip: _entryMode.value == TimePickerEntryMode.dial
+//               ? MaterialLocalizations.of(context).inputTimeModeButtonLabel
+//               : MaterialLocalizations.of(context).dialModeButtonLabel,
+//         ),
         Expanded(
           child: Container(
             alignment: AlignmentDirectional.centerEnd,
